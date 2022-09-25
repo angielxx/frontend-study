@@ -15,7 +15,7 @@ SSAFY 8기 서울 5반 프론트엔드 스터디
 |        |                            이은지                            |                            유한별                            |                            박유진                            |                            이상화                            |
 | ------ | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | Github | ![https://github.com/angielxx](https://avatars.githubusercontent.com/u/103434451?v=4) | ![https://github.com/hanbeulYou](https://avatars.githubusercontent.com/u/109324631?v=4) | ![https://github.com/yjp8842](https://avatars.githubusercontent.com/u/109319379?v=4) | ![https://github.com/SangwhaLee](https://avatars.githubusercontent.com/u/69105050?v=4) |
-| Blog   |                 https://velog.io/@94applekoo                 |                                                              |                https://codejiny.tistory.com/                 |                                                              |
+| Blog   |                 https://velog.io/@94applekoo                 |                 https://velog.io/@94applekoo                 |                https://codejiny.tistory.com/                 |                 https://velog.io/@94applekoo                 |
 
 ### 👀 진행방식
 
