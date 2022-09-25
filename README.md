@@ -12,10 +12,12 @@ SSAFY 8기 서울 5반 프론트엔드 스터디
 
 ### 🐤 멤버
 
-|        |                            이은지                            |                            유한별                            |                            박유진                            |                            이상화                            |
+|        |                             은지                             |                             한별                             |                             유진                             |                             상화                             |
 | ------ | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| Github | <img src="https://avatars.githubusercontent.com/u/103434451?v=4" alt="https://github.com/angielxx" style="zoom: 33%;" /> | <img src="https://avatars.githubusercontent.com/u/109324631?v=4" alt="https://github.com/hanbeulYou" style="zoom: 33%;" /> | <img src="https://avatars.githubusercontent.com/u/109319379?v=4" alt="https://github.com/yjp8842" style="zoom: 33%;" /> | <img src="https://avatars.githubusercontent.com/u/69105050?v=4" alt="https://github.com/SangwhaLee" style="zoom: 33%;" /> |
-| Blog   |                 https://velog.io/@94applekoo                 |                 https://velog.io/@94applekoo                 |                https://codejiny.tistory.com/                 |                 https://velog.io/@94applekoo                 |
+| Github | [![](https://github.com/angielxx.png?)](https://github.com/angielxx) | [![](https://github.com/hanbeulYou.png?)](https://github.com/hanbeulYou) | [![](https://github.com/yjp8842.png?size=80)](https://github.com/yjp8842) | [![](https://github.com/SangwhaLee.png?size=80)](https://github.com/SangwhaLee) |
+| Blog   |                 https://velog.io/@94applekoo                 |                                                              |                https://codejiny.tistory.com/                 |                                                              |
+
+
 
 ### 👀 진행방식
 
