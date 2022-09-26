@@ -15,7 +15,7 @@ SSAFY 8기 서울 5반 프론트엔드 스터디
 |        |                             은지                             |                             한별                             |                             유진                             |                             상화                             |
 | ------ | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | Github | [![](https://github.com/angielxx.png?)](https://github.com/angielxx) | [![](https://github.com/hanbeulYou.png?)](https://github.com/hanbeulYou) | [![](https://github.com/yjp8842.png?size=80)](https://github.com/yjp8842) | [![](https://github.com/SangwhaLee.png?size=80)](https://github.com/SangwhaLee) |
-| Blog   |                 https://velog.io/@94applekoo                 |                                                              |                https://codejiny.tistory.com/                 |                                                              |
+| Blog   |                 https://velog.io/@94applekoo                 |                https://hanbeulyou.github.io/                 |                https://codejiny.tistory.com/                 |                                                              |
 
 
 
