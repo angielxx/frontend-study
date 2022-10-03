@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- webfont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <title>Your Desktop</title>
+</head>
+<body>
+  <div id="loginBox" class="#">
+    <div class="login">
+      <h1>What's your name?</h1>
+      <form action="" id="loginForm">
+        <input type="text" name="name" id="name" placeholder="Type your name." autofocus>
+        <input type="submit" value="" class="hidden">
+      </form>
+    </div>
+  </div>
+  <div id="appBox">
+    <div class="app">
+      <!-- start : bookmark -->
+      <div id="bookmark" class="bookmark">
+        <div class="bookmark-title">
+          <button class="plus-btn">
+            <img src="./img/icon/plus2.png" alt="">
+            <form action="" class="bookmarkForm hidden">
+              <input type="text" placeholder="Name" class="bookmark-name">
+              <input type="url" placeholder="URL" class="bookmark-link">
+              <input type="submit" value="" class="hidden">
+            </form>
+            <img src="./img/icon/plus2.png" alt="" class="bookmark-close hidden">
+          </button>
+          <h3>BOOKMARK</h3>
+        </div>
+        <div class="bookmark-list">
+          <!-- start : bookmark element -->
+          <!-- <a class="a-bookmark" href="https://naver.com">
+            <img src="./img/icon/folder.png" alt="">
+            <h3>Naver</h3>
+          </a> -->
+          <!-- end : bookmark element -->
+        </div>
+      </div>
+      <!-- end : bookmark -->
+      <!-- start : main -->
+      <div class="main">
+        <div class="col1">
+          <div id="greeting" class="box">
+            <h1></h1>
+            <h3>How are you?</h3>
+            <div id="mood-choice">
+              <img src="./img/icon/emoji_good.png" alt="">
+              <img src="./img/icon/emoji_bad.png" alt="">
+            </div>
+          </div>
+          <div id="clock" class="box">
+            <div class="clock-box">
+              <h1 class="time"></h1>
+              <h1 class="timezone"></h1>
+            </div>
+            <h4 class="date"></h4>
+          </div>
+          <div id="quote" class="box">
+            <div class="box-head">
+              <h1>Daily Quote</h1>
+              <hr>
+            </div>
+            <div class="quote-body">
+              <p></p>
+              <span></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col2">
+          <div id="to-do" class="box">
+            <div class="box-head">
+              <h1>To Do List</h1>
+              <hr>
+            </div>
+            <div class="box" id="filter">
+              <span>All</span>
+              <img src="./img/icon/toggle.png" alt="">
+            </div>
+            <div class="todoBox" id="todo-list">
+              <!-- a to-do -->
+              <!-- <div class="box todo" id="">
+                <div class="head">
+                  <img src="./img/icon/check1.png" alt="">
+                  <span>innertext</span>
+                </div>
+                <img src="./img/icon/trash.png" alt="">
+              </div> -->
+              <!-- a to-do -->
+            </div>
+            <div class="add-wrap height1">
+              <div id="add-button" class="add-button">
+                <img src="./img/icon/plus3.png" alt="">
+                Add your new task
+              </div>
+              <form class="addForm-tag hidden">
+                <input class="input1" type="text" placeholder="Name of new category">
+                <div class="close-row">
+                  <img src="./img/icon/plus2.png" alt="">
+                </div>
+              </form>
+              <form class="addForm hidden">
+                <div class="close-row">
+                  <img src="./img/icon/plus2.png" alt="">
+                </div>
+                <input class="input1" type="text" placeholder="What do you need to do?" required>
+                <div id="plus-button">
+                  <div>
+                    <img src="./img/icon/plus3.png" alt="">
+                    Add new category
+                  </div>
+                </div>
+                <div id="tag-list">
+                  <ul id="select">
+                    <!-- add tags here -->
+                      <!-- <button class="tag" id="id">태그이름</button> -->
+                    <!-- <button class="tag" id="meeting">
+                      Meeting
+                    </button> -->
+                  </ul>
+                </div>
+                <div class="save-row">
+                  <input type="submit" id="save-button" value="Save">
+                </div>
+              </form>
+            </div>
+            <!-- add new tag input -->
+          </div>
+        </div>
+        <div class="col3">
+          <div id="music" class="box">
+            <!-- <div id="player">
+
+            </div> -->
+            <div class="player">
+              <div class="music-info">
+                <div class="album-cover">
+                  <!-- add cover here -->
+                </div>
+                <div class="title">
+                  <h3>Title</h3>
+                </div>
+              </div>
+              <div class="timeline">
+                <hr>
+              </div>
+              <div class="player-btns">
+                <div>
+                  <img class="shuffle" src="./img/icon/shuffle.png" alt="">
+                </div>
+                <div>
+                  <img class="back" src="./img/icon/back.png" alt="">
+                </div>
+                <div>
+                  <img class="play" src="./img/icon/play.png" alt="">
+                </div>
+                <div>
+                  <img class="next" src="./img/icon/next.png" alt="">
+                </div>
+                <div>
+                  <img class="repeat" src="./img/icon/repeat.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weather" class="box">
+            <div class="box-head">
+              <h1>weather</h1>
+              <hr>
+            </div>
+            <div class="wrap">
+
+              <!-- Today weather -->
+              <div id="today" class="row">
+                <h4 class="left">Today</h4>
+                <div class="right">
+                  <div class="today-icon">
+                    <!-- add icon here -->
+                  </div>
+                  <div class="today-info">
+                    <h5 class="today-main"></h5>
+                    <h6 class="location"></h6>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Daily Forecast -->
+              <div id="daily" class="row">
+                <h4 class="left">Daily<br> Forecast</h4>
+                <div class="right">
+                  <!-- start : for문으로 추가 -->
+                  
+                  <!-- end : for문으로 추가 -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- end : main -->
+    </div>
+  </div>
+
+  <!-- javasript -->
+  <script src="./js/greeting.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/todo.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/music.js"></script>
+  <script src="./js/bookmark.js"></script>
+</body>
+</html>
