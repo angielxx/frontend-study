@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <!--Font 추가-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+  <!--font-family: 'Single Day', cursive;-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <!--font-family: 'Noto Sans KR', sans-serif;-->
+  <title>SSYWORLD</title>
+</head>
+<body style="font-family: 'Noto Sans KR', sans-serif;">
+  <div class="modal hidden">
+    <div class="modal__login horizontal">
+      <form id="login-form" class="hidden">
+        <div><input id="login__id" required maxlength="15" type="text" placeholder="아이디"></div>
+        <div><input id="login__submit" type="submit" value="로그인"></div>
+      </form>
+    </div>
+  </div>
+  <div id="background">
+    <div class="background__left"></div>
+    <div class="background__right"></div>
+    <div class="background__dashed"></div>
+    <div class="background__board">
+      <div class="horizontal">
+        <!--여기부터 차노리와 함께하는 페어프로그래밍-->
+        <div class="vertical board__left">
+          <div class="content__today">
+            <h6 id="today">Today | Total</h6>
+          </div>
+          <div class="content__leftbox">
+            <div class="leftbox vertical">
+              <div class="leftbox__profile">
+              </div>
+              <div class="leftbox__weather horizontal">
+                <div class="weather__default">
+                  <h6>오늘의 날씨는...</h6>
+                </div>
+                <div class="weather__now"></div>
+              </div>
+              <div class="leftbox__quote">
+                <span style="font-family: 'Single Day', cursive;"></span>
+              </div>
+              <div class="leftbox__family vertical">
+                <div class="family__top"><h6>💑 일촌</h6></div>
+                <div class="family__bottom">
+                  <select onchange="if(this.value) window.open(this.value);">
+                    <option value="" disabled selected>파도타기</option>
+                    <option value="https://github.com/hanbeulYou">hanbeulYou</option>
+                    <option value="https://github.com/yjp8842">yjp8842</option>
+                    <option value="https://github.com/SangwhaLee">SangwhaLee</option>
+                    <option value="https://github.com/angielxx">angielxx</option>
+                    <option value="https://github.com/bohodays">bohodays</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--my coding-->
+        <div class="vertical board__right">
+          <div class="content__name horizontal">
+            <div class="content__name__title">
+              <h5 id="my__home" class="dontshow">title</h5>
+            </div>
+            <div class="content__name__url">
+              <h5 id="my__url" class="dontshow">url</h5>
+            </div>
+          </div>
+          <div class="content__rightbox">
+            <div class="rightbox vertical">
+              <div class="rightbox__top horizontal">
+                <div class="rightbox__top__news vertical">
+                  <h5>📻 NEWS</h5>
+                  <div class="news__content"></div>
+                </div>
+                <div class="rightbox__top__bgm">
+                  <h5>🎧 BGM</h5>
+                  <div class="bgm__content"></div>
+                </div>
+              </div>
+              <div class="rightbox__miniroom">
+                <div class="miniroom__feeling vertical">
+                  <div class="miniroom__input">
+                    <form id="feeling-form">
+                        <input id="feeling-input" type="text" placeholder="지금 기분 어때요?" maxlength='6' required autocomplete="off">
+                    </form>
+                  </div>
+                  <div class="miniroom__minimi"></div>
+                </div>
+              </div>
+              <div class="rightbox__comments vertical">
+                <div class="comment__input horizontal">
+                  <h5>😉 WHAT'S FRIENDS SAY : </h5>
+                  <form id="comment-form">
+                    <input type="text" id="form-input" required>
+                  </form>
+                </div>
+                <ul id="comments__list"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background__aside vertical">
+      <div class="aside">
+        <div class="aside__title">
+          <h5 style="color:white">😀 미니미에게 기분을 알려주세요</h5>
+        </div>
+        <div class="aside__content">
+          <ul id="feelings__list"></ul>
+        </div>
+        <div class="aside__music">
+          <div id="player" style="display: none;"></div>
+          <div class="player__title"></div>
+          <div class="player__buttons">
+            <button id="before"><img id="buttons" src="./img/player/prevBTN.png" alt="prev"></button>
+            <button id="pause"><img id="buttons" src="./img/player/playBTN.png" alt="play"></button>
+            <button id="stop"><img id="buttons" src="./img/player/stopBTN.png" alt="stop"></button>
+            <button id="next"><img id="buttons" src="./img/player/nextBTN.png" alt="next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/api_keys.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/miniroom.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/news.js"></script>
+  <script src="js/comments.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/feeling.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/today.js"></script>
+</body>
+</html>
