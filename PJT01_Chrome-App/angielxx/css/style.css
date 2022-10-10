@@ -5,16 +5,17 @@
     font-family: 'Montserrat', 'Noto Sans KR', sans-serif !important;
     --font1: 'Montserrat', sans-serif;
     --font2: 'Noto Sans KR', sans-serif;
-    --blue1: #3988FF;
+    --blue1: #1b7aff;
     --grey1: #E9E9E9;
     --grey2: #C9C9C9;
     --red1: #FF3E49;
-    --green1: #24EFBE;
+    --green1: #34fde9;
+    --green2: #0ba797;
 }
 
 body h1 {
     font-family: var(--font1);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 /* end : font */
@@ -218,7 +219,7 @@ body {
     position: absolute;
     margin-top: 4px;
 }
-.a-bookmark + div button {
+.editBtn, .deleteBtn {
     border: none;
     width: 25px;
     height: 25px;
@@ -231,7 +232,7 @@ body {
 }
 
 /* 삭제 */
-.bookmark-btns button:nth-child(2) {
+.deleteBtn {
     transform: rotate(45deg);
     background-color: var(--red1);
     cursor: pointer;
@@ -264,7 +265,7 @@ body {
 }
 
 .box h1 {
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -419,7 +420,7 @@ body {
     width: auto;
     height: auto;
     font-size: 12px;
-    background-color: #24EFBE;
+    background-color: var(--green1);
     padding: 4px 8px;
     margin-right: 6px;
     border-radius: 10px;
@@ -535,7 +536,7 @@ body {
 }
 
 .tag {
-    background-color: #75ffd6;
+    background-color: var(--green1);
     color: black;
     border: none;
     width: auto;
@@ -554,7 +555,7 @@ body {
 }
 
 .tag-clicked {
-    background-color: #00b48a;
+    background-color: var(--green2);
     color: white;
 }
 
@@ -646,10 +647,13 @@ body {
 }
 
 /* music player */
+#player {
+    display: none;
+}
 
 #music {
     width: 100%;
-    height: 165px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
@@ -660,26 +664,85 @@ body {
     height: 100%;
 }
 
-.music-info {
+/* start : musicForm */
+.musicForm-close {
+    transform: rotate(45deg);
+}
+/* end : musicForm */
+
+.playlist {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
     font-weight: 500;
-    height: 50px;
+    height: 150px;
+    overflow: scroll;
+    font-size: 10px;
 }
 
-.album-cover {
-    width: 50%;
-    height: 50px;
-    background-color: grey;
-    margin-right: 18px;
-}
-.title {
-    width: 50%;
+.playlist::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
 }
 
-.timeline {
-    height: 20px;
+.playlist::-webkit-scrollbar-thumb {
+    background-color: rgb(151, 151, 151);
+    border-radius: 5px;
+    width: 1px;
+}
+
+.playlist::-webkit-scrollbar-track {
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+.music-wrap {
+    padding: 4%;
+}
+
+.a-music {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    cursor: pointer;
+}
+
+
+.a-music div {
+    width: 14%;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    margin-right: 6%;
+    border-radius: 10px;
+}
+
+.a-music span {
+    width: 70%;
+    height: fit-content;
+    max-height: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 12px;
+}
+
+.a-music .deleteBtn {
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+}
+
+.a-music .deleteBtn img {
+    width: 12px;
+}
+
+.playing {
+    background-color: var(--grey1);
+    color: #1b7aff;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .player-btns {
@@ -689,22 +752,26 @@ body {
     padding: 0px 20px;
 }
 
+
 .shuffle, .repeat {
-    width: 20px;
+    cursor: pointer;
+    width: 15px;
 }
 
 .back, .next {
-    width: 26px;
+    cursor: pointer;
+    width: 18px;
 }
 
-.play {
-    width: 36px;
+.pause {
+    cursor: pointer;
+    width: 30px;
 }
 
 /* weather */
 #weather {
     width: 100%;
-    height: 273px;
+    height: auto;
 }
 
 #weather .wrap {
@@ -716,7 +783,11 @@ body {
 
 #weather .row {
     display: flex;
-    margin-bottom: 21px;
+    /* margin-bottom: 21px; */
+}
+
+#today {
+    margin-bottom: 20px;
 }
 
 .row .left {

@@ -90,15 +90,7 @@
               <img src="./img/icon/toggle.png" alt="">
             </div>
             <div class="todoBox" id="todo-list">
-              <!-- a to-do -->
-              <!-- <div class="box todo" id="">
-                <div class="head">
-                  <img src="./img/icon/check1.png" alt="">
-                  <span>innertext</span>
-                </div>
-                <img src="./img/icon/trash.png" alt="">
-              </div> -->
-              <!-- a to-do -->
+              <!-- add to-do -->
             </div>
             <div class="add-wrap height1">
               <div id="add-button" class="add-button">
@@ -125,10 +117,6 @@
                 <div id="tag-list">
                   <ul id="select">
                     <!-- add tags here -->
-                      <!-- <button class="tag" id="id">태그이름</button> -->
-                    <!-- <button class="tag" id="meeting">
-                      Meeting
-                    </button> -->
                   </ul>
                 </div>
                 <div class="save-row">
@@ -141,16 +129,24 @@
         </div>
         <div class="col3">
           <div id="music" class="box">
-            <!-- <div id="player">
+            <div id="player">
 
-            </div> -->
+            </div>
             <div class="player">
-              <div class="music-info">
-                <div class="album-cover">
-                  <!-- add cover here -->
-                </div>
-                <div class="title">
-                  <h3>Title</h3>
+              <div class="head">
+                <button class="plus-btn">
+                  <img src="./img/icon/plus2.png" alt="">
+                  <form action="" class="musicForm hidden">
+                    <input type="url" name="url">
+                    <input type="submit" value="" class="hidden">
+                  </form>
+                  <img src="./img/icon/plus2.png" alt="" class="musicForm-close hidden">
+                </button>
+                <h1>Playlists</h1>
+              </div>
+              <div class="playlist">
+                <div class="music-wrap">
+                  <!-- add music here -->
                 </div>
               </div>
               <div class="timeline">
@@ -158,33 +154,23 @@
               </div>
               <div class="player-btns">
                 <div>
-                  <img class="shuffle" src="./img/icon/shuffle.png" alt="">
-                </div>
-                <div>
                   <img class="back" src="./img/icon/back.png" alt="">
                 </div>
                 <div>
-                  <img class="play" src="./img/icon/play.png" alt="">
+                  <img class="pause" src="./img/icon/play.png" alt="">
                 </div>
                 <div>
                   <img class="next" src="./img/icon/next.png" alt="">
-                </div>
-                <div>
-                  <img class="repeat" src="./img/icon/repeat.png" alt="">
                 </div>
               </div>
             </div>
           </div>
           <div id="weather" class="box">
-            <div class="box-head">
-              <h1>weather</h1>
-              <hr>
-            </div>
             <div class="wrap">
 
               <!-- Today weather -->
               <div id="today" class="row">
-                <h4 class="left">Today</h4>
+                <h4 class="left">Today<br>Weather</h4>
                 <div class="right">
                   <div class="today-icon">
                     <!-- add icon here -->
