@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header__logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <img class="header_menu-icon" src="./images/icon-menu.svg" alt="">
+    <div class="header__menu">
+      <div class="header__menu__closeBtn">
+        <img src="./images/icon-close-menu.svg" alt="">
+      </div>
+      <div class="header__menu__main">
+        <a id="features" href="#">
+          Features
+          <img src="./images/icon-arrow-down.svg" alt="">
+        </a>
+        <!-- feature toggle menu -->
+        <div id="toggle-feature" class="toggle hidden">
+          <a href=""><img src="./images/icon-todo.svg" alt="">Todo List</a>
+          <a href=""><img src="./images/icon-calendar.svg" alt="">Calendar</a>
+          <a href=""><img src="./images/icon-reminders.svg" alt="">Reminders</a>
+          <a href=""><img src="./images/icon-planning.svg" alt="">Planning</a>
+        </div>
+        <a id="company" href="#">
+          Company
+          <img src="./images/icon-arrow-down.svg" alt="">
+        </a>
+        <!-- company toggle menu -->
+        <div id="toggle-company" class="toggle hidden">
+          <a href="">History</a>
+          <a href="">Our Team</a>
+          <a href="">Blog</a>
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+
+      </div>
+      <div class="header__menu__account">
+        <a href="#">Login</a>
+        <a href="#" class="button register">Register</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article class="main__article">
+      <div>
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+        <a href="#" class="button learnMore">Learn more</a>
+      </div>
+      <div class="article__client">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </article>
+    <article class="main__image">
+      <img src="./images/image-hero-mobile.png" alt="">
+    </article>
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>

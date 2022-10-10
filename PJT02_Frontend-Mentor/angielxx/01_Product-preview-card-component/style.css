@@ -1,0 +1,173 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font1);
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Fraunces', serif;
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --darkBlue: hsl(212, 21%, 14%);
+    --grayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --active: #1A4031;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--cream)
+}
+
+.card {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 345px;
+        height: 612px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--white);
+        border-radius: 10px;
+    }
+}
+
+/* ///////////////////////////////// start : left ////////////////////////////// */
+.picture {
+    width: 50%;
+    background: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+    background-repeat: no-repeat;
+    flex-shrink: 2;
+}
+
+@media (max-width: 375px) {
+    .picture {
+        height: 40%;
+        width: 100%;
+        background: url("./images/image-product-mobile.jpg");
+        background-size: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+.picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* ///////////////////////////////// end : left ////////////////////////////// */
+
+
+/* ///////////////////////////////// start : right ////////////////////////////// */
+.aside {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-basis: 300px;
+}
+
+@media (max-width: 375px) {
+    .aside {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+}
+
+/* reset margin*/
+h4, h1, p, span, button {
+    margin: 0px;
+}
+
+h4 {
+    color: var(--grayishBlue);
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+}
+@media (max-width: 375px) {
+    h4 {
+        margin-bottom: 15px;
+    }
+}
+
+h1 {
+    font-family: var(--font2);
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 375px) {
+    .title {
+        margin-bottom: 20px;
+    }
+}
+
+p {
+    color: var(--grayishBlue);
+    line-height: 1.4rem;
+    font-size: 0.8rem;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    height: 96px;
+}
+
+.price1 {
+    color: var(--darkCyan);
+    margin-right: 16px;
+    font-size: 1.8rem;
+}
+
+.price2 {
+    color: var(--grayishBlue);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+
+.add-button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--darkCyan);
+    padding: 0px;
+    border-radius: 10px;
+    color: white;
+    font-family: var(--font1 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button:hover {
+    background-color: var(--active);
+    cursor: pointer;
+}
+
+.add-button svg {
+    margin-right: 8px;
+}
+/* ///////////////////////////////// end : right ////////////////////////////// */
