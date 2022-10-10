@@ -1,0 +1,217 @@
+* {
+  user-select: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: #fff;
+    font-family: "Gothic A1", sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+img {
+    z-index: -1;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1090px;
+    width: 100%;
+    height: auto; /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+.main {
+    font-family: "Gothic A1", sans-serif;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+#clock {
+    font-weight: 500;
+    font-size: 8rem;
+    color: #fff;
+}
+
+#name-input {
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid white;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#greeting {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 6rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#login-form h1 {
+    font-family: "Gothic A1", sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.make-text-white {
+    color: #fff;
+}
+
+#quote {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+}
+
+#focus-today {
+    color: #fff;
+    bottom: 12rem;
+}
+
+#focus-input {
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid white;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#FocusToday { 
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    bottom: 17px
+}
+
+#Today {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+input[class="checktoday"] + label {
+    display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #fff;
+    border-radius: 20%;
+	cursor: pointer;
+    margin-right: 10px;
+}
+
+input[class="checktoday"]:checked + label {
+	background-color: #fff;
+}
+
+input[class="checktoday"] {
+    display: none;
+}
+
+#TodoButton{
+    color: #fff;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#weather {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+
+.todoCanvas {
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 2%;
+    background-color: #fff;
+    width : 20rem;
+    height: 20rem;
+    bottom: 4rem;
+    right: 0.5rem;
+}
+
+#todo-form{
+    position: inherit;
+    left: 1rem;
+    bottom: 0.5rem;
+    width: 90%;
+}
+
+.todoinput {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+#todo-list {
+    padding-left: 1rem;
+    list-style: none;
+    width: 100%;
+    position: inherit;
+    top: 3rem;
+    max-height: 70%;
+    overflow: scroll;
+}
+
+#todo-list::-webkit-scrollbar {
+    display: none;
+}
+
+input[id="todolist"] {
+    margin-right: 5px;
+}
+
+input[id="todolist"]:checked + label {
+    text-decoration: line-through;
+}
+
+li button {
+    position: absolute;
+    width: 0.5rem;
+    height: 13px;
+    border-radius: 20%;
+    right: 1rem;
+    margin-top: 5px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.todoCanvas h3 {
+    margin-left: 1rem;
+    margin-top: 2px;
+}
+
