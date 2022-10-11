@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" container="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Web Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="container horizontal">
+      <div class="container__intro vertical">
+        <div class="intro__header">
+          <h1 id="intro__header">Learn to code by<br>
+            watching others</h1>
+        </div>
+        <div class="intro__body">
+          <p id="intro__body">See how experienced developers solve problems in real-time.<br>
+            Watching scripted tutorials is great, but understanding how<br>
+            developers think is invaluable.</p>
+        </div>
+      </div>
+      <div class="container__main vertical">
+        <div class="main__ad">
+          <p id="main__ad"><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+        </div>
+        <div class="main__form vertical">
+          <div class="form__firstName form__style">
+            <div class="form">
+              <input type="text" id="firstName" class="input__style" placeholder="First Name">
+              <!--<img src="./images/icon-error.svg" id="errorIcon" alt="error">-->
+            </div>
+            <div class="form__invalid hidden" id="InvalidfirstName"><span id="InvalidfirstNameSpan" class="hidden"></span></div>
+            
+          </div>
+          <div class="form__lastName form__style">
+            <div class="form">
+              <input type="text" id="lastName" class="input__style" placeholder="Last Name">
+            </div>
+            <div class="form__invalid hidden" id="InvalidlastName"><span id="InvalidlastNameSpan" class="hidden"></span></div>
+          </div>
+          <div class="form__email form__style">
+            <div class="form">
+              <input type="text" id="email" class="input__style" placeholder="Email Address">
+            </div>
+            <div class="form__invalid hidden" id="Invalidemail"><span id="InvalidemailSpan" class="hidden"></span></div>
+          </div>
+          <div class="form__password form__style">
+            <div class="form">
+              <input type="text" id="password" class="input__style" placeholder="Password">
+            </div>
+            <div class="form__invalid hidden" id="Invalidpassword"><span id="InvalidpasswordSpan" class="hidden"></span></div>
+          </div>
+          <div class="form__submit form__style">
+            <input type="button" id="submitForm" value="CLAIN YOUR FREE TIRAL">
+          </div>
+          <div class="form__terms">
+            <span id="form__terms__first">By clicking the button, you are agreeing to our <b id="form__terms__last">Terms and Services</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<img src="" alt="">
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/hanbeulYou">Hanbeul You</a>.
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
