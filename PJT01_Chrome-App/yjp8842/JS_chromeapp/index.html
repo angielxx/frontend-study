@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Momentum App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body id="background">
+  <header class="text-light bgImg">
+    <h1 id="greeting" class="hidden display-3 text-center main-font fw-bold greet-margin mt-5"></h1>
+    <div class="name-input text-center">
+      <form id="login-form" class="hidden display-6">
+        <input required maxlength="15" type="text" placeholder="What is your name?" class="text-center underline" style="border: underline; background: transparent;"/>
+        <!-- <input type="submit" value="Log In"/> -->
+      </form>
+    </div>
+    <!-- clock & weather start -->
+    <div class="d-flex mb-3 ms-3 me-5">
+      <h3 id="clock" class="main-font fw-bold me-auto ps-5 ms-5">00:00</h3>
+      <div id="weather" class="main-font fw-bold h4 ms-auto pe-5 me-5">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- clock & weather-end -->
+    <!-- inbox -->
+    <div class="border border-4 rounded box-size bg-light bg-opacity-75">
+      <div class="d-flex justify-content-center">
+        <div>
+          <!-- todo-list -->
+          <div class="inbox-size1 rounded">
+            <h3 class="fw-bolder text-center mt-2">💡 TODO LIST</h1>
+            <form id="todo-form" class="text-center mt-4">
+              <input id="todo-form" class="text-center fonts inbox-input" type="text" required />
+            </form>
+            <div class="ms-3 mt-2">
+              <div id="todo-list" class="h4 mt-4"></div>
+            </div>
+          </div>
+          <!-- todo-list end -->
+          <!-- quote start -->
+          <div class="text-center quote-size rounded">
+            <div class="quote-padding">
+              <h4 class="sub-font">Today Quote's</h4>
+              <div id="quote" class="mt-3">
+                <samp class="sub-font h5"></samp><br>
+                <samp class="sub-font h5"></samp>
+              </div>
+            </div>
+          </div>
+          <!-- quote end -->
+        </div>
+        <div>
+          <!-- youtube start -->
+          <div class="youtube-box rounded p-3 main-font">
+            <div id="player" class="youtube-size"></div>
+            <div class="btn-group btn-group-sm ms-4 me-3" role="group" aria-label="Small button group">
+              <button id="play" type="button" class="btn btn-light">Play</button>  
+              <button id="pause" type="button" class="btn btn-light">Pause</button> 
+              <button id="next" type="button" class="btn btn-light">Next</button>
+            </div>
+            <span id="playList">🎧 Click Play Button</span>
+          </div>
+          <!-- youtube end -->
+          <!-- memory start -->
+          <div class="inbox-size2 rounded d-flex flex-column align-items-center">
+            <h3 class="fw-bolder text-center mt-2">🎞 MEMORIES</h1>
+              <div id="carouselExampleControls" class="carousel slide memory-size" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/memory1.jpg" class="d-block w-100 rounded" style="height: 300px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/memory2.jpg" class="d-block w-100 rounded" style="height: 300px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/memory3.jpg" class="d-block w-100 rounded" style="height: 300px">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+          <!-- memory end -->
+        </div>
+        <div>
+          <!-- calendar start -->
+          <div class="my-calendar clearfix rounded">
+            <div class="clicked-date">
+              <div class="cal-day"></div>
+              <div class="cal-date"></div>
+            </div>
+            <div class="calendar-box">
+              <div class="ctr-box clearfix">
+                <button type="button" title="prev" class="btn-cal prev">
+                </button>
+                <span class="cal-month"></span>
+                <span class="cal-year"></span>
+                <button type="button" title="next" class="btn-cal next">
+                </button>
+              </div>
+              <table class="cal-table">
+                <thead>
+                  <tr>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>F</th>
+                    <th>S</th>
+                  </tr>
+                </thead>
+                <tbody class="cal-body"></tbody>
+              </table>
+            </div>
+          </div>
+          <!-- calendar end -->
+        </div>
+      </div>
+      <!-- Bookmarks start -->
+      <div class="bookmark-size rounded pt-3 d-flex justify-content-around">
+        <div class="text-dark fw-bold bookmark-font">BOOKMARKS</div>
+        <a href="https://naver.com">
+          <img src="img/naver.png" class="a-font" href="">
+        </a>
+        <a href="https://youtube.com">
+          <img src="img/youtube.png" class="a-font" href="">
+        </a>
+        <a href="https://chrome.com">
+          <img src="img/chrome.png" class="a-font" href="">
+        </a>
+        <a href="https://facebook.com">
+          <img src="img/facebook.png" class="a-font" href="">
+        </a>
+        <a href="https://instagram.com">
+          <img src="img/instagram.png" class="a-font" href="">
+        </a>
+        <a href="https://github.com">
+          <img src="img/github.png" class="a-font" href="">
+        </a>
+        <a href="https://discord.com">
+          <img src="img/discord.png" class="a-font" href="">
+        </a>
+      </div>
+      <!-- Bookmarks end -->
+    </div>
+  </header>
+  <script src="js/keys.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/youtube.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
