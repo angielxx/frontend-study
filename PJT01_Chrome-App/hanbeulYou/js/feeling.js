@@ -44,7 +44,7 @@ function deleteFeeling(event){
 function postFeelings(newFeeling){
     const li = document.createElement("li");
     li.id = newFeeling.id;
-    const span = document.createElement("span");
+    const span = document.createElement("div");
     const downButton = document.createElement("button");
     const upButton = document.createElement("button");
     const delButton = document.createElement("button");
@@ -56,9 +56,12 @@ function postFeelings(newFeeling){
     li.appendChild(delButton);
     feelingList.appendChild(li);
     span.innerText = newFeeling.text;
+    span.style.width = "70px";
     downButton.innerText = "🔻";
+    downButton.style.marginBottom = "10px";
     feelingValue.value = newFeeling.value;
     feelingValue.max = 100;
+    feelingValue.style.width = "120px";
     upButton.innerText = "🔺";
     delButton.innerText = "❌";
     downButton.addEventListener("click", downFeeling);
@@ -67,6 +70,7 @@ function postFeelings(newFeeling){
 }
 
 function feelingSubmit(event){
+    if(feelings.length < 3){
     event.preventDefault();
     const newFeeling = feelingInput.value;
     feelingInput.value = "";
@@ -78,6 +82,9 @@ function feelingSubmit(event){
     feelings.push(newFeelingObj);
     postFeelings(newFeelingObj);
     saveFeelings();
+    } else{
+        alert('기분은 3개를 초과할 수 없습니다.')
+    }
 }
 
 function updateProgress(){

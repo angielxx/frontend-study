@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-cyworld.png">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -84,14 +86,14 @@
                 </div>
                 <div class="rightbox__top__bgm">
                   <h5>🎧 BGM</h5>
-                  <div class="bgm__content"></div>
+                  <ol class="bgm__content"></ol>
                 </div>
               </div>
               <div class="rightbox__miniroom">
                 <div class="miniroom__feeling vertical">
                   <div class="miniroom__input">
                     <form id="feeling-form">
-                        <input id="feeling-input" type="text" placeholder="지금 기분 어때요?" maxlength='6' required autocomplete="off">
+                        <input id="feeling-input" type="text" placeholder="지금 기분 어때요?" maxlength='4' required autocomplete="off">
                     </form>
                   </div>
                   <div class="miniroom__minimi"></div>
@@ -121,12 +123,22 @@
         </div>
         <div class="aside__music">
           <div id="player" style="display: none;"></div>
-          <div class="player__title"></div>
+          <div class="player__container">
+            <div class="player__icon">💿</div>
+            <div class="player__title__container hi">
+              <div class="player__title"></div>
+            </div>
+          </div>
           <div class="player__buttons">
             <button id="before"><img id="buttons" src="./img/player/prevBTN.png" alt="prev"></button>
             <button id="pause"><img id="buttons" src="./img/player/playBTN.png" alt="play"></button>
             <button id="stop"><img id="buttons" src="./img/player/stopBTN.png" alt="stop"></button>
             <button id="next"><img id="buttons" src="./img/player/nextBTN.png" alt="next"></button>
+            <div class="volume__container">
+              <div class="volume__slider">
+                <input type="range" id="volumeRange" min="0" max="100" value="50" class="slider">
+              </div>
+            </div>
           </div>
         </div>
       </div>

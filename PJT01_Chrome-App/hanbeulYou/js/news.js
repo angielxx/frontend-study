@@ -1,6 +1,6 @@
 const NEWS_API = globalVariable.NEWS_API;
 
-var newsURL = 'https://newsapi.org/v2/top-headlines?' + 'country=kr&' + `apiKey=${NEWS_API}`;
+newsURL = 'https:newsapi.org/v2/top-headlines?' + 'country=kr&' + `apiKey=${NEWS_API}`;
 var req = new Request(newsURL);
 
 console.log(newsURL);
@@ -23,3 +23,5 @@ fetch(req)
         newsList.appendChild(articleThree);
         articleThree.innerText = data.articles[2].title;
     })
+
+// 네이버 API -> require 
