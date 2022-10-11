@@ -1,0 +1,174 @@
+:root {
+    --color-red: hsl(0, 100%, 74%);
+    --color-green: hsl(154, 59%, 51%);
+    --color-blue: hsl(248, 32%, 49%);
+    --color-dark-blue: hsl(249, 10%, 26%);
+    --color-grayish-blue: hsl(246, 25%, 77%);
+
+    --weights-regular: 400;
+    --weights-medium: 500;
+    --weights-semi-bold: 600;
+    --weights-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+    height: 100vh;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-red);
+    background-image: url('/images/bg-intro-desktop.png');
+    background-size: 100%;
+}
+
+.horizontal {
+    display: flex;
+    flex-flow: row wrap;
+    width: fit-content;
+    height: 100%;
+}
+
+.vertical {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: fit-content;
+}
+
+.background {
+    display: flex;
+    padding: 100px 200px 100px 200px;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* /////////////// Left Box /////////////// */
+
+.container__intro {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+}
+
+#intro__header {
+    font-size: 48px;
+    font-weight: var(--weights-bold);
+    line-height: 1.2;
+    color: white;
+}
+
+#intro__body {
+    font-size: 16px;
+    color: white;
+}
+
+/* /////////////// Right Box /////////////// */
+
+.container__main {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+}
+
+.main__ad {
+    display: flex;
+    background-color: var(--color-blue);
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#main__ad {
+    font-size: 16px;
+    font-weight: var(--weights-regular);
+    color: white;
+}
+
+.main__form {
+    display: flex;
+    margin-top: 20px;
+    background-color: white;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+}
+
+.form__style {
+    display: flex;
+    border: none;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.input__style {
+    border: 1px solid var(--color-grayish-blue);
+    border-radius: 5px;
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+}
+
+#submitForm {
+    color: white;
+    background-color: var(--color-green);
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.from__terms {
+    display: flex;
+    justify-content: center;
+}
+
+#form__terms__first {
+    font-size: 12px;
+    color: var(--color-grayish-blue);
+}
+
+#form__terms__last {
+    font-size: 12px;
+    color: var(--color-red);
+}
+
+.hidden {
+    display: none;
+}
+
+.invalidForm {
+    border: 3px solid var(--color-red);
+}
+
+.form {
+    display: flex;
+}
+
+#errorIcon {
+    display: flex;
+    position: relative;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    height: 25px;
+    width: 25px;
+}
