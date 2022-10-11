@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script>
+      window.FontAwesomeConfig = {
+      searchPseudoElements: true
+     }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>New_momentum</title>
+</head>
+<body>
+    <div class="main">
+        <!-- quotes -->
+        <div id="quote">
+            <span></span>
+        </div>
+        <!-- clock -->
+        <br><br><br><br><br><br><br><br><br>
+        <h1 id="clock"></h1>
+        <!-- greeting -->
+        <form id="login-form" action="">
+          <h1>What is your name?</h1>
+          <input id="name-input" required type="text"/>
+        </form>
+        <h1 id="greeting"></h1>
+				<br>
+				<!-- today focus -->
+				<form id="focus-today" action="" class="hidden">
+					<h2>What is your main focus for today?</h2>
+					<input id="focus-input" required type="text">
+				</form>
+        <p id="Today" class="hidden">TODAY</p>
+        <div id="todaycase" class="d-flex">
+          <input type="checkbox" id="todaycheckbox" class="checktoday hidden">
+          <label for="todaycheckbox">
+          </label>
+          <span id=FocusToday></span>
+        </div>
+        <!-- todo list -->
+        <p id="TodoButton">Todo</p>
+        <div class="todoCanvas hidden">
+          <h3>Today</h3>
+          <form id="todo-form">
+            <input type="text" required class="todoinput" placeholder="New Todo">
+          </form>
+          <ul id="todo-list">
+          </ul>
+        </div>
+        <!-- weather -->
+        <div id="weather">
+            <span></span>
+            <span></span>
+            <br>
+            <span></span>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/backgrounds.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/waeather.js"></script>
+    <script src="js/main_focus.js"></script>
+</body>
+</html>
