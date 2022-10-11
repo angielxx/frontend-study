@@ -304,11 +304,13 @@ select option[value=""][disabled] {
 }
 
 .bgm__content {
+  display: flex;
   border-top: 1px solid black;
   width: calc(100% - 20px);
   padding: 5px;
   margin-top: 10px;
   font-size: 10px;
+  flex-flow: row wrap;
 }
 
 .rightbox__miniroom {
@@ -406,7 +408,7 @@ input {
   display: flex;
   border-radius: 10px;
   margin-left: 50px;
-  width: 400px;
+  width: 300px;
 }
 
 .aside__title {
@@ -429,10 +431,57 @@ input {
 }
 
 .aside__music {
-  width: 100%;
-  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 60px);
+  height: 60px;
+  padding: 10px 30px 10px 30px ;
   border-radius: 0px 0px 5px 5px ;
   background-color: #E7E7E7;
+}
+
+.player__container {
+  display: flex;
+  width: 85%;
+  flex-direction: row;
+  border: 3px solid #676568;
+  border-radius: 20px;
+}
+
+.player__title__container {
+  width: 100%;
+  height: 15px;
+  padding: 5px;
+}
+
+.hi {
+  overflow: hidden;
+}
+
+.player__icon {
+  display: flex;
+  padding: 5px;
+}
+
+.player__title {
+  display: flex;
+  width: fit-content;
+  height: 15px;
+  animation-name: marquee;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(200%, 0);
+  }
+  100% {
+    transform: translate(-110%, 0);
+  }
 }
 
 .player__buttons {
@@ -440,8 +489,9 @@ input {
   flex-direction: row;
   width: 100%;
   height: fit-content;
+  padding-top: 5px;
+  justify-content: center;
 }
-
 
 #before {
   display: flex;
