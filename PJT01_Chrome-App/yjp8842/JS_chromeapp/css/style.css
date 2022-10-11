@@ -1,0 +1,300 @@
+html, body {
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-font {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sub-font {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.greet-margin {
+	margin: 20px;
+}
+
+.bgImg {
+  /* height: 1100px;
+  width: 1900px; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* width: 100%; */
+  /* height: 1230px; */
+}
+
+.box-size {
+  /* margin-top: 30px; */
+  margin-left: 100px;
+  margin-bottom: 50px;
+  height: 700px;
+  width: 1700px;
+  zoom: 0.8;
+}
+
+.inbox-size1 {
+  margin-top: 50px;
+  margin-left: 20px;
+	margin-right: 40px;
+  height: 300px;
+  width: 400px;
+	border: 8px solid #b7d3e8;
+	background-color: #b7d3e8;
+  overflow: auto;
+}
+
+.inbox-size2 {
+  margin-top: 20px;
+  margin-left: 20px;
+	margin-right: 40px;
+  height: 400px;
+  width: 400px;
+	border: 8px solid #b7d3e8;
+	background-color: #b7d3e8;
+}
+
+.quote-size {
+	margin-top: 30px;
+  margin-left: 20px;
+	height: 150px;
+	width: 400px;
+	background-color: #b7d3e8;
+  overflow: auto;
+}
+
+.bookmark-size {
+	margin-top: 30px;
+	margin-left: 60px;
+	height: 100px;
+	width: 1600px;
+	background-color: aliceblue;
+}
+
+.bookmark-font {
+  height: 50px;
+  width: 120px;
+  margin-top: 18px;
+  margin-left: 20px;
+  font-size: larger;
+}
+
+.a-font {
+  height: 70px;
+  width: 140px;
+}
+
+.memory-box {
+  height: 300px;
+  width: 400px;
+  background-color: #b7d3e8;
+}
+
+.memory-size {
+  margin-top: 20px;
+  height: 200px;
+  width: 300px;
+}
+
+.youtube-size {
+  /* height: 190px;
+  width: 350px;
+  margin-top: 10px;
+  margin-left: 10px; */
+  display: none;
+}
+
+.youtube-box {
+  margin-top: 50px;
+  margin-left: 20px;
+  height: 60px;
+  width: 400px;
+  background-color: #b7d3e8;
+}
+
+.quote-padding {
+  padding: 20px;
+}
+
+/* calendar */
+/* html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  float: none;
+}
+  
+  /* ======== Calendar ======== */
+.my-calendar {
+  width: 680px;
+  margin-top: 60px;
+  padding: 20px 20px 10px;
+  text-align: center;
+  font-weight: 800;
+  border: 8px solid #b7d3e8;
+  cursor: default;
+	background-color: #b7d3e8;
+}
+
+.my-calendar .clicked-date {
+  border-radius: 25px;
+  margin-top: 80px;
+  float: left;
+  width: 42%;
+  padding: 40px 0 20px;
+  background: #ede6a1;
+}
+
+.my-calendar .calendar-box {
+  float: right;
+  width: 58%;
+  padding-left: 30px;
+	padding-top: 40px;
+}
+
+.clicked-date .cal-day {
+  font-size: 24px;
+}
+
+.clicked-date .cal-date {
+  font-size: 130px;
+}
+  
+.ctr-box {
+  padding: 0 16px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.ctr-box .btn-cal {
+  position: relative;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.ctr-box .btn-cal:after {
+  content: '<';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ctr-box .btn-cal.next {
+  float: right;
+}
+
+.ctr-box .btn-cal.next:after {
+  content: '>';
+}
+
+.cal-table {
+  width: 100%;
+}
+
+.cal-table th {
+  width: 14.2857%;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.cal-table td {
+  padding: 3px 0;
+  height: 50px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.cal-table td.day {
+  position: relative;
+  cursor: pointer;
+}
+
+.cal-table td.today {
+  background: #ffd255;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.cal-table td.day-active {
+  background: #ff8585;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.cal-table td.has-event:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+	bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #FFC107;
+}
+
+/* input */
+.inbox-input {
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: aliceblue;
+}
+
+.underline {
+	border-left-width: 0;
+	border-right-width: 0; 
+	border-top-width: 0; 
+	border-bottom-width: 3px;
+	border-color: aliceblue;
+	padding-bottom: 20px;
+}
+
+.story-input {
+	width: 300px;
+  height: 180px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+	margin-top: 30px;
+  background-color: aliceblue;
+}
+
+.name-input {
+	margin: 50px;
+}
+
+::placeholder {
+	color: aliceblue;
+	font-weight: bold;
+}
