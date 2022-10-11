@@ -1,0 +1,222 @@
+:root {
+  /* Color */
+  --color-red: hsl(0, 100%, 74%);
+  --color-green: hsl(154, 59%, 51%);
+  --color-blue: hsl(248, 32%, 49%);
+  --color-dark-blue: hsl(249, 10%, 26%) ;
+  --color-grayish-blue: hsl(246, 25%, 77%);
+
+  /* Weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+  
+  /* border */
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background: url('images/bg-intro-desktop.png');
+  background-color: var(--color-red);
+}
+
+::placeholder {
+  color: var(--color-grayish-blue);
+  font-weight: var(--weight-semi-bold);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.comments {
+  min-width: 600px;
+  width: 50%;
+  color: white;
+}
+
+.commets__title {
+  font-size: 60px;
+  line-height: 65px;
+  font-weight: var(--weight-bold);
+  margin-bottom: 35px;
+}
+
+.comments__content {
+  font-size: 19.5px;
+  font-weight: var(--weight-regular);
+}
+
+.form {
+  min-width: 570px;
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.form__header {
+  background-color: var(--color-blue);
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: var(--border-radius);
+  font-size: 20px;
+  font-weight: var(--weight-regular);
+  margin: 20px;
+  padding: 20px 0;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.4);
+}
+
+.form__content {
+  border-radius: var(--border-radius);
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.4);
+}
+
+.content__box {
+  position: relative;
+}
+
+.content__input {
+  width: 100%;
+  margin: 10px 0;
+  color: black;
+  font-weight: var(--weight-bold);
+  font-size: 16px;
+  padding: 20px 30px;
+  border-radius: 4px;
+  border: 1px solid var(--color-grayish-blue);
+}
+
+.error__img {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  display: block;
+}
+
+.visible {
+  display: none;
+}
+
+.error__message {
+  text-align: right;
+  color: var(--color-red);
+  font-size: 14px;
+  font-weight: var(--weight-regular);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.submit {
+  cursor: pointer;
+  background-color: var(--color-green);
+  color: white;
+  padding: 20px 0;
+  margin: 9px 0;
+  font-size: 19px;
+  font-weight: var(--weight-regular);
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.4);
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+
+.form__footer {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.form__footer-semi {
+  display: inline;
+  color: var(--color-grayish-blue);
+  font-weight: var(--weight-semi-bold);
+}
+
+.form__footer-bold {
+  display: inline;
+  color: var(--color-red);
+  font-weight: var(--weight-bold);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 375px) {
+
+  .container {
+    width: 100%;
+    height: 1000px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .comments {
+    width: 90%;
+    min-width: 0;
+  }
+  
+  .form {
+    min-width: 0;
+    width: 90%;
+  }
+
+  .commets__title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  
+  .comments__content {
+    font-size: 14px;
+  }
+
+  .form__header {
+    font-size: 14px;
+  }
+
+  .content__input {
+    font-size: 12px;
+  }
+
+  .submit {
+    font-size: 14px;
+  }
+}
