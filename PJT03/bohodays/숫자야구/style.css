@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'GmarketSansMedium';
+  margin: 0px;
+  height: 100%;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dbdbdb;
+  border-radius: 20px;
+  padding: 80px;
+  -webkit-box-shadow: 10px 10px 14px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 14px 1px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 14px 1px rgba(0,0,0,0.75);
+}
+
+.title__cotent {
+  font-weight: bold;
+  font-size: 56px;
+  margin-top: 0px;
+  margin-bottom: 36px;
+}
+
+.description {
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+.play__button {
+  font-weight:550;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 16px 24px;
+  cursor: pointer;
+}
+
+.play__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.game-page {
+  background-color: #dbdbdb;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.game-page__title {
+  margin: 0px;
+  padding-bottom: 16px;
+}
+
+input {
+  font-size: 50px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 20px;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+.bord {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.bord__title {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.bord__records {
+  padding-left: 70px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: bold;
+  overflow-y: auto;
+}
+
+.check__button {
+  font-weight:550;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 16px 24px;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.check__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.result {
+  position: absolute;
+  background-color: #dbdbdb;
+  border-radius: 20px;
+  padding: 50px;
+  -webkit-box-shadow: 10px 10px 5px 3000px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 3000px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 3000px rgba(0,0,0,0.75);
+}
+
+.restart__button {
+  font-weight:550;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 14px 20px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.restart__button:hover {
+  background-color: black;
+  color: white;
+}
