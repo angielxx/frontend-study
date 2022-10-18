@@ -1,0 +1,118 @@
+body {
+  padding: 160px;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 27px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+button {
+  border: 2px solid hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 50px;
+  height: 40px;
+  width: 120px;
+  margin-top: 50px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.inbox {
+  display: flex;
+  align-self: center;
+  width: fit-content;
+}
+
+.title {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: xx-large;
+  margin-top: 20px;
+}
+
+.buttons:hover {
+  background-color: var(--active);
+  color: white;
+  cursor: pointer;
+}
+
+.learn-more1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.learn-more2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.learn-more3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.inbox1 {
+  width: 200px;
+  height: 380px;
+  padding: 40px;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.inbox2 {
+  width: 200px;
+  height: 380px;
+  padding: 40px;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.inbox3 {
+  width: 200px;
+  height: 380px;
+  padding: 40px;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .box {
+    height: auto;
+  }
+
+  .inbox {
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+
+  .inbox1 {
+    width: 200px;
+    height: 340px;
+    padding: 40px;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .inbox2 {
+    width: 200px;
+    height: 340px;
+    padding: 40px;
+    background-color: hsl(184, 100%, 22%);
+  }
+  
+  .inbox3 {
+    width: 200px;
+    height: 340px;
+    padding: 40px;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+  }
+}
