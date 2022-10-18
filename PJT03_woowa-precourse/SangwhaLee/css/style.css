@@ -1,0 +1,37 @@
+#station-manager h4 {
+    margin-bottom: 0rem;
+}
+
+#add-station-form {
+    align-items: center;
+}
+
+#add-station-form input[type="text"] {
+    height: 18px;
+    vertical-align: 1px;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#line-manager h4 {
+    margin-bottom: 0px;
+}
+
+#line-name-input {
+    margin-bottom: 2rem;
+}
+
+#section-select {
+    display: flex;
+}
+
+#section-select button {
+    margin-right: 0.5rem;
+}

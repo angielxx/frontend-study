@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>지하철 노선도 관리</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>🚇 지하철 노선도 관리 </h1>
+    </div>
+    <div>
+      <button id="station-manager-button">1. 역 관리</button>
+      <button id="line-manager-button">2. 노선 관리</button>
+      <button id="section-manager-button">3. 구간 관리</button>
+      <button id="map-print-manager-button">4. 지하철 노선도 출력</button>
+    </div>
+    <div id="station-manager" class="hidden">
+      <h4>역 이름</h4>
+      <form id="add-station-form">
+        <input type="text" placeholder="역 이름을 입력해주세요.">
+        <input type="submit" value="역 추가">
+      </form>
+      <h2>🚉 지하철 역 목록</h3>
+      <table id="stationTable">
+        <tr>
+          <th>역 이름</th>
+          <th>설정</th>
+        </tr>
+      </table>
+    </div>
+    <div id="line-manager" class="hidden">
+      <h4>노선 이름</h4>
+      <input id="line-name-input" type="text" placeholder="노선 이름을 입력해주세요">
+      <form id="selectLine">
+        <label>
+          상행 종점
+          <select id="top-line"></select>
+        </label>
+        <br> 
+        <label>
+          하행 종점
+          <select id="bottom-line"></select>
+        </label>
+        <br><br>
+        <input type="submit" value="노선 추가">
+      </form>
+      <h2>🚉지하철 노선 목록</h2>
+      <table id="lineTable">
+        <tr>
+          <th>노선 이름</th>
+          <th>상행 종점역</th>
+          <th>하행 종점역</th>
+          <th>설정</th>
+        </tr>
+      </table>
+    </div>
+    <div id="section-manager" class="hidden">
+      <h2>구간을 수정할 노선을 선택해주세요.</h2>
+      <div id="section-select">
+      </div>
+      <div id="section-editor" class="hidden">
+        <h2></h2>
+        <h4>구간 등록</h4>
+        <form id="section-edit-form">
+          <select id="add-station-sector"></select>
+          <input type="number" min="0" placeholder="순서">
+          <input type="submit" value="등록">
+        </form>
+        <br>
+        <table id="selected-line-table"></table>
+      </div>
+    </div>
+    <div id="section-list" class="hidden"></div>
+    <script type="module" src="/src/index.js" ></script>
+    <script type="module" src="/src/stationManager.js"></script>
+    <script type="module" src="/src/lineManger.js"></script>
+    <script type="module" src="/src/sectionManager.js"></script>
+    <script type="module" src="/src/showSection.js"></script>
+  </body>
+</html>
