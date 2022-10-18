@@ -28,5 +28,5 @@ function initPage() {
 
     result.innerText = '';
     userInput.value = '';
-    new BaseballGame();
+    // new BaseballGame();
 }
