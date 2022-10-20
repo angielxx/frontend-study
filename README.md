@@ -1,6 +1,8 @@
 # FE-STUDY
 SSAFY 8기 서울 5반 프론트엔드 스터디
 
+
+
 ## 1. 스터디 개요
 
 ### 🎯 목표
@@ -12,16 +14,16 @@ SSAFY 8기 서울 5반 프론트엔드 스터디
 
 ### 🐤 멤버
 
-|        |                             은지                             |                             한별                             |                             유진                             |                             상화                             |
-| ------ | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| Github | [![](https://github.com/angielxx.png?)](https://github.com/angielxx) | [![](https://github.com/hanbeulYou.png?)](https://github.com/hanbeulYou) | [![](https://github.com/yjp8842.png?size=80)](https://github.com/yjp8842) | [![](https://github.com/SangwhaLee.png?size=80)](https://github.com/SangwhaLee) |
-| Blog   |                 https://velog.io/@94applekoo                 |                   https://velog.io/@hayou                    |                https://codejiny.tistory.com/                 |                                                              |
+|        |                             은지                             |                             한별                             |                             유진                             |                             상화                             |                             중원                             |
+| ------ | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| Github | [![](https://github.com/angielxx.png?)](https://github.com/angielxx) | [![](https://github.com/hanbeulYou.png?)](https://github.com/hanbeulYou) | [![](https://github.com/yjp8842.png?size=80)](https://github.com/yjp8842) | [![](https://github.com/SangwhaLee.png?size=80)](https://github.com/SangwhaLee) | [![](https://avatars.githubusercontent.com/u/109454527?v=4?size=80)](https://github.com/SangwhaLee) |
+| Blog   |                 https://velog.io/@94applekoo                 |                   https://velog.io/@hayou                    |                https://codejiny.tistory.com/                 |                https://velog.io/@goldyboy1103                |                 https://pjw2369.tistory.com/                 |
 
 
 
 ### 👀 진행방식
 
-1. 진행 및 장소 : 주 1회, 화요일 오후 00:00 (TBD)
+1. 진행 및 장소 : 주 1회, 화요일 오후 6:00
 
 2. 스터디 당일
 
@@ -65,12 +67,20 @@ SSAFY 8기 서울 5반 프론트엔드 스터디
 #### PJT03
 
 1. 내용
+   - 우아한 테크 코스 자바스크립트 프리코스 따라하기
+
+2. 학습자료
+   - https://github.com/woowacourse/javascript-subway-path-precourse
+
+#### PJT04
+
+1. 내용
    - JS 토이 프로젝트 : 미니 게임 홈페이지 만들기
 
 2. 예시
    - https://sypear.github.io/game-world/
 
-#### PJT04
+#### PJT05
 
 1. 내용
    - SSAFY 1학기 관통 PJT 디벨롭
