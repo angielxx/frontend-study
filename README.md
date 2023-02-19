@@ -7,8 +7,6 @@ SSAFY 8기 서울 5반 프론트엔드 스터디
 
 ### 🎯 목표
 
-> 개인 포트폴리오 3+개 만들기!
-
 - 프로젝트 중심으로 HTML, CSS, Javascript를 학습 및 실습한다.
 - 프로젝트가 끝나면 해당 프로젝트에 대한 내용을 개인 블로그에 포스팅한다.
 
@@ -71,20 +69,6 @@ SSAFY 8기 서울 5반 프론트엔드 스터디
 
 2. 학습자료
    - https://github.com/woowacourse/javascript-subway-path-precourse
-
-#### PJT04
-
-1. 내용
-   - JS 토이 프로젝트 : 미니 게임 홈페이지 만들기
-
-2. 예시
-   - https://sypear.github.io/game-world/
-
-#### PJT05
-
-1. 내용
-   - SSAFY 1학기 관통 PJT 디벨롭
-
 
 
 ## 2. PJT
